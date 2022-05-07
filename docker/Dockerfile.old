@@ -1,0 +1,36 @@
+FROM parity/parity:latest
+
+MAINTAINER Agustin Viñao <info@agustinvinao.com>
+
+USER root
+
+# env
+ENV path="/home/parity/bin:${PATH}"
+ENV TRANSFER_AMOUNT 5
+ENV NODE_PATH /usr/lib/node_modules
+
+# install
+RUN apt-get update && \
+  apt-get install -y curl git build-essential apt-transport-https && \
+  curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
+  curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN apt-get update && \
+  apt-get install -qq -y build-essential && \
+  apt-get install -qq -y nodejs && \
+  apt-get install -qq -y yarn
+
+RUN yarn add global web3 --prefix /usr/local
+#RUN npm install -g web3
+
+# Entry point
+ENTRYPOINT ["sh", "run-parity.sh"]
+
+# Scripts
+ADD scripts/run-parity.sh .
+ADD scripts/parity-block-scheduler.js /docker-scripts/parity-block-scheduler.js
+ADD scripts/transfer-ether.js /docker-scripts/transfer-ether.js
+
+# Ports
+EXPOSE 8545 8546 8180
+

@@ -1,2 +1,7 @@
-[parity]
+[parity]                                
+# Custom chain                                
+# chain = "/home/parity/.local/share/io.parity.ethereum/chain.json"
 chain = "goerli"
+
+# Blockchain and settings will be stored in ./.
+# base_path = "./"

@@ -1,3 +1,5 @@
+# OSX
+
 ## Partiy - homebrew
 
 Using homebrew for installing software on osx is the best option.

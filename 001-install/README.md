@@ -1,8 +1,14 @@
 # OSX
 
-## Partiy - homebrew
-
 Using homebrew for installing software on osx is the best option.
+
+## Solidity - homebrew
+
+```
+$ brew install solidity
+```
+
+## Partiy - homebrew
 
 In order to install Parity on osx, the following repo describres the steps:
 

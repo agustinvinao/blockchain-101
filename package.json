@@ -1,0 +1,13 @@
+{
+  "name": "blockchain-101",
+  "version": "0.0.1",
+  "description": "101 steps to start condig smart contracts",
+  "main": "index.js",
+  "repository": "git@github.com:agustinvinao/blockchain-101.git",
+  "author": "Agustin Vinao <agustinvinao@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0"
+  }
+}

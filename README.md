@@ -2,6 +2,9 @@
 
 This repo tries to collect different tools and examples to help you start coding smart contracts. It's my journey. I'll hope this help others.
 
+In the Articles folder you will find different notes. Each do this are presented
+as articles on my personal blog (agustinvinao.com) and here too.
+
 #### _not fully working yet_
 
 ## Using a network for development

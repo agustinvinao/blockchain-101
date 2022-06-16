@@ -2,8 +2,16 @@
 
 This repo tries to collect different tools and examples to help you start coding smart contracts. It's my journey. I'll hope this help others.
 
+## Articles:
+
 In the Articles folder you will find different notes. Each do this are presented
 as articles on my personal blog (agustinvinao.com) and here too.
+
+
+* [4 steps to deploy a Hello World smart contract on your local dev network (thuffle, ganache and metamask)](https://github.com/agustinvinao/blockchain-101/blob/main/articles/001-4-steps-to-deploy-a-hello-world-smart-contract-on-your-local-dev-network-thuffle-ganache-and-metamask.md)
+
+
+---
 
 #### _not fully working yet_
 
